@@ -1,8 +1,6 @@
 import { Heart } from 'lucide-react';
 
 export function Footer2() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="relative w-full py-8 z-10 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
@@ -11,7 +9,6 @@ export function Footer2() {
           <div className="text-white font-bold text-xl">
             Dev<span className="gradient-text">Studio</span>
           </div>
-
           {/* Copyright */}
           <div className="flex flex-col sm:flex-row items-center gap-2 text-zinc-400 text-sm">
             <div className="flex items-center gap-2">
@@ -25,7 +22,6 @@ export function Footer2() {
               </a>
             </div>
           </div>
-
           {/* Links */}
           <div className="flex items-center gap-6">
             <a href="#" className="text-zinc-400 text-sm hover:text-white transition-colors">
