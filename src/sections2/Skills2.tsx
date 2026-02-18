@@ -9,18 +9,18 @@ const skills = [
 ];
 
 const technologies = [
-  { name: 'React', icon: '⚛️' },
-  { name: 'TypeScript', icon: '🔷' },
-  { name: 'Next.js', icon: '▲' },
-  { name: 'Node.js', icon: '🟢' },
-  { name: 'Python', icon: '🐍' },
-  { name: 'PostgreSQL', icon: '🐘' },
-  { name: 'MongoDB', icon: '🍃' },
-  { name: 'AWS', icon: '☁️' },
-  { name: 'Docker', icon: '🐳' },
-  { name: 'Figma', icon: '🎨' },
-  { name: 'Git', icon: '📦' },
-  { name: 'GraphQL', icon: '◈' },
+  { name: 'React', icon: '/icons/react-svgrepo-com.svg' },
+  { name: 'TypeScript', icon: '/icons/typescript-icon-svgrepo-com.svg' },
+  { name: 'Next.js', icon: '/icons/nextjs-icon-svgrepo-com.svg' },
+  { name: 'Node.js', icon: '/icons/nodejs-icon-svgrepo-com.svg' },
+  { name: 'Python', icon: '/icons/python-svgrepo-com.svg' },
+  { name: 'MongoDB', icon: '/icons/mongodb-svgrepo-com.svg' },
+  { name: 'Git', icon: '/icons/git-svgrepo-com.svg' },
+  { name: 'PostgreSQL', icon: '/icons/postgresql-logo-svgrepo-com.svg' },
+  { name: 'AWS', icon: '/icons/aws-svgrepo-com.svg' },
+  { name: 'Docker', icon: '/icons/docker-svgrepo-com.svg' },
+  { name: 'Tailwind', icon: '/icons/tailwind-svgrepo-com.svg' },
+  { name: 'GraphQL', icon: '/icons/GraphQL.svg' },
 ];
 
 export function Skills2() {
@@ -140,8 +140,12 @@ export function Skills2() {
                   }`}
                   style={{ transitionDelay: `${500 + index * 50}ms` }}
                 >
-                  <div className="text-2xl mb-2 group-hover:scale-110 transition-transform">
-                    {tech.icon}
+                  <div className="mb-2 flex justify-center">
+                    <img
+                      src={tech.icon}
+                      alt={tech.name + ' icon'}
+                      className="h-12 w-12 object-contain group-hover:scale-110 transition-transform"
+                    />
                   </div>
                   <div className="text-xs text-zinc-400">{tech.name}</div>
                 </div>

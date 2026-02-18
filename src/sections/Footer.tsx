@@ -1,10 +1,9 @@
 import { Github, Linkedin, Twitter, Dribbble } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Github, href: '#', label: 'GitHub' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Dribbble, href: '#', label: 'Dribbble' },
+  { icon: '/icons/facebook-svgrepo-com.svg', href: 'https://facebook.com/', label: 'Facebook' },
+  { icon: '/icons/instagram-svgrepo-com.svg', href: 'https://instagram.com/', label: 'Instagram' },
+  { icon: '/icons/tiktok-svgrepo-com.svg', href: 'https://tiktok.com/', label: 'TikTok' },
 ];
 
 const footerLinks = [
@@ -29,9 +28,11 @@ export function Footer() {
                 key={social.label}
                 href={social.href}
                 aria-label={social.label}
-                className="w-10 h-10 rounded-full bg-[#0B0C10] flex items-center justify-center text-[#A7ACB8] hover:text-[#FF4D2E] hover:bg-[#FF4D2E]/10 transition-colors"
+                className="w-10 h-10 rounded-full bg-[#0B0C10] flex items-center justify-center hover:bg-[#FF4D2E]/10 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <social.icon size={18} />
+                <img src={social.icon} alt={social.label} className="h-6 w-6 object-contain" />
               </a>
             ))}
           </div>

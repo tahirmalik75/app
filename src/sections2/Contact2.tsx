@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import { Mail, MapPin, Send, Github, Linkedin, Twitter, CheckCircle } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Github, href: '#', label: 'GitHub' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
+  { icon: '/icons/facebook-color-svgrepo-com.svg', href: 'https://facebook.com/', label: 'Facebook' },
+  { icon: '/icons/instagram-1-svgrepo-com.svg', href: 'https://www.instagram.com/dream.devx', label: 'Instagram' },
+  { icon: '/icons/tiktok-svgrepo-com.svg', href: 'https://tiktok.com/', label: 'TikTok' },
 ];
 
 export function Contact2() {
@@ -111,9 +111,11 @@ export function Contact2() {
                     key={social.label}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-12 h-12 rounded-xl glass-card flex items-center justify-center text-zinc-400 hover:text-white hover:bg-white/10 transition-all"
+                    className="w-12 h-12 rounded-xl glass-card flex items-center justify-center hover:bg-white/10 transition-all"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <social.icon size={20} />
+                    <img src={social.icon} alt={social.label} className="h-6 w-6 object-contain" />
                   </a>
                 ))}
               </div>
