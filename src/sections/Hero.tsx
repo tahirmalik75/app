@@ -34,9 +34,9 @@ export function Hero() {
 
       <div className="relative w-full min-h-screen flex items-center px-[clamp(18px,4vw,64px)] py-[10vh]">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[4vw] items-center">
-          {/* Left: Portrait Card */}
+          {/* Left: Logo Card */}
           <div
-            className={`relative rounded-[22px] overflow-hidden shadow-[0_18px_50px_rgba(0,0,0,0.45)] transition-all duration-1000 ease-out ${
+            className={`relative flex items-center justify-center rounded-[22px] overflow-hidden shadow-[0_18px_50px_rgba(0,0,0,0.45)] bg-[#181A20] transition-all duration-1000 ease-out ${
               isVisible
                 ? 'opacity-100 translate-x-0 scale-100'
                 : 'opacity-0 -translate-x-[40vw] scale-[0.98]'
@@ -44,19 +44,11 @@ export function Hero() {
             style={{ height: 'clamp(400px, 72vh, 700px)' }}
           >
             <img
-              src="/images/hero-portrait.jpg"
-              alt="Developer at work"
-              className="w-full h-full object-cover"
+              src="/my-logo.png"
+              alt="Logo"
+              className="h-32 w-auto object-contain"
+              style={{ maxHeight: '180px', margin: 'auto' }}
             />
-            {/* Status chip */}
-            <div className="absolute top-6 left-6 flex items-center gap-2 bg-[#0B0C10]/80 backdrop-blur-sm px-4 py-2 rounded-full border border-[rgba(244,246,250,0.08)]">
-              <span className="w-2 h-2 bg-[#FF4D2E] rounded-full animate-pulse" />
-              <span className="text-[#F4F6FA] text-xs font-medium tracking-wide">
-                Available for Q2 projects
-              </span>
-            </div>
-            {/* Gradient overlay at bottom */}
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#0B0C10]/60 to-transparent" />
           </div>
 
           {/* Right: Text Content */}

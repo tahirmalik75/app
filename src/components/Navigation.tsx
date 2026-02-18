@@ -42,13 +42,13 @@ export function Navigation() {
           {/* Logo */}
           <a
             href="#"
-            className="text-[#F4F6FA] font-semibold text-lg tracking-tight"
+            className="flex items-center gap-2"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
-            Dream Dev
+            <img src="/my-logo.png" alt="Logo" className="h-10 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
