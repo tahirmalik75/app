@@ -7,20 +7,14 @@ export function Footer2() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Logo */}
           <div className="text-white font-bold text-xl">
-            Dev<span className="gradient-text">Studio</span>
+            Dream<span className="gradient-text"> Dev</span>
           </div>
           {/* Copyright */}
-          <div className="flex flex-col sm:flex-row items-center gap-2 text-zinc-400 text-sm">
-            <div className="flex items-center gap-2">
-              <span>Made with</span>
-              <Heart size={14} className="text-pink-500 fill-pink-500" />
-            </div>
-            <div>
-              All Right Reserved Designed By{' '}
-              <a className="border-b border-zinc-400 hover:text-pink-500 transition-colors" href="https://www.instagram.com/dream.devx" target="_blank" rel="noopener noreferrer">
-                Dream.Devx
-              </a>
-            </div>
+          <div className="text-zinc-400 text-sm">
+            All Right Reserved Designed By{' '}
+            <a className="border-b border-zinc-400 hover:text-pink-500 transition-colors" href="https://www.instagram.com/dream.devx" target="_blank" rel="noopener noreferrer">
+              Dream.Devx
+            </a>
           </div>
           {/* Links */}
           <div className="flex items-center gap-6">

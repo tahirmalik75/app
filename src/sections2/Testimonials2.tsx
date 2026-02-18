@@ -57,6 +57,15 @@ export function Testimonials2() {
     return () => observer.disconnect();
   }, []);
 
+  // Auto-slide every 3 seconds
+  useEffect(() => {
+    if (!isVisible) return;
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % testimonials.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [isVisible]);
+
   const nextSlide = () => {
     setActiveIndex((prev) => (prev + 1) % testimonials.length);
   };
