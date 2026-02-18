@@ -60,8 +60,7 @@ export function Hero2() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
-          I build beautiful, performant web applications that users love.
-          Specializing in React, TypeScript, and modern UI design.
+          We Turn Your Vision into High-Converting Digital Experiences Modern, Fast & SEO-Optimized Websites That Actually Grow Your Business
         </p>
 
         {/* CTA Buttons */}
